@@ -24,10 +24,10 @@ Also run the api app from the main AirBnB_clone_v4 directory.
 The user can now filter available Places by the chosen amenities.
 <img src="https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/309/hbnb_1_2.jpg"/>
 
-A handy red circle changes color in the top right based on the status of the Restful API. Grey when it's unavailable:
+A handy circle changes color in the top right based on the status of the Restful API. Grey when it's unavailable:
 <img src="https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/309/hbnb_2_0.jpg"/>
 And red when it is available:
-<ing src="https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/309/hbnb_2_1.jpg"/>
+<img src="https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/309/hbnb_2_1.jpg"/>
 
 <h4>third phase</h4>
 Build an API. To implement, run the API module. Current implmentation requires an existing database in mysql. 
