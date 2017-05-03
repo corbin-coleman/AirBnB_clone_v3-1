@@ -4,6 +4,30 @@
 
 The purpose of this project is to recreate the AirBnB site, from the back-end data management to the front-end user interface. 
 
+<h4>Fourth Phase</h4>
+Use javascript to interact with a Restful API to dynamically produce content on a webpage.
+
+Run web_dynamic app at the root of the main AirBnB_clone_v4 directory.
+<pre><code>
+>>> HBNB_MYSQL_USER=hbnb_dev HBNB_MYSQL_PWD=hbnb_dev_pwd HBNB_MYSQL_HOST=localhost HBNB_MYSQL_DB=hbnb_dev_db HBNB_TYPE_STORAGE=db python3 -m web_dynamic.0-hbnb
+</code></pre>
+Expected response:
+<pre><code>
+* Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+....
+</code></pre>
+Also run the api app from the main AirBnB_clone_v4 directory.
+<pre><code>
+>>> HBNB_MYSQL_USER=hbnb_dev HBNB_MYSQL_PWD=hbnb_dev_pwd HBNB_MYSQL_HOST=localhost HBNB_MYSQL_DB=hbnb_dev_db HBNB_TYPE_STORAGE=db HBNB_API_PORT=5001 python3 -m api.v1.app
+</code></pre>
+
+The user can now filter available Places by the chosen amenities.
+<img src="https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/309/hbnb_1_2.jpg"/>
+
+A handy red circle changes color in the top right based on the status of the Restful API. Grey when it's unavailable:
+<img src="https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/309/hbnb_2_0.jpg"/>
+And red when it is available:
+<ing src="https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/309/hbnb_2_1.jpg"/>
 
 <h4>third phase</h4>
 Build an API. To implement, run the API module. Current implmentation requires an existing database in mysql. 
@@ -62,6 +86,7 @@ Where we are creating a command line interpretor to access objects that will sto
 - **Jianqin Wang**, \<jianqin.wang@holbertonschool.com>, @jianqinwang94
 - **Anne Cognet**, \<anne.cognet@holbertonschool.com>, @1million40
 - **Richard Sim**, \<richard.sim@holbertonschool.com>, @rdsim8589
+- **Corbin Coleman**, \<corbin.coleman@holbertonschool>, @CorbinMColeman
 
 ----------------------------------------
 
