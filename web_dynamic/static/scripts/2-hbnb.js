@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  var amenityDict = {};
+  let amenityDict = {};
 
   $('li :checkbox').change(function () {
     if (this.checked) {
