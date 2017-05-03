@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """
-This is module 10-hbnb_filters
-In this module we combine flask with sqlAlchemy for the first time
-Run this script from AirBnB_v2 directory for imports
+This is module 0-hbnb_filters
+Uses flask and sqlalchemy in combination to create dynamic web pages
+Run this script from AirBnB_v4 directory for imports
 """
 from models import storage
 from models.base_model import Base
