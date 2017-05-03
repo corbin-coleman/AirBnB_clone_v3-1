@@ -21,8 +21,10 @@ $(document).ready(function () {
     }
 
     $('div.amenities h4').text(h4Str);
-    $('h4').css({'overflow': 'hidden', 'white-space': 'nowrap',
-		 'text-overflow': 'ellipsis', 'height': '100%'});
+    $('h4').css({'overflow': 'hidden',
+      'white-space': 'nowrap',
+      'text-overflow': 'ellipsis',
+      'height': '100%'});
   });
 
   $.get('http://0.0.0.0:5001/api/v1/status/', (body) => {
