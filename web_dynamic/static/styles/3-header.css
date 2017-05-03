@@ -8,3 +8,18 @@ header {
     background-repeat: no-repeat;
     background-position: 20px 50%;
 }
+
+#api_status {
+    position: absolute;
+    align: right;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #cccccc;
+    right: 30px;
+    top: 15px;
+}
+
+.available#api_status {
+    background-color: #ff545f;
+}
