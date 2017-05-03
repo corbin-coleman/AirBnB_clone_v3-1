@@ -12,9 +12,6 @@ $(document).ready(function () {
     let count = 0;
     for (let key in amenityDict) {
       if (amenityDict.hasOwnProperty(key)) {
-        console.log(key);
-        console.log(amenityDict[key]);
-        console.log(count);
         if (count > 0) {
           h4Str = h4Str.concat(', ');
         }
@@ -23,8 +20,6 @@ $(document).ready(function () {
       }
     }
 
-    console.log('Text');
-    console.log(h4Str);
     $('div.amenities h4').text(h4Str);
     $('h4').css({'overflow': 'hidden', 'white-space': 'nowrap',
 		 'text-overflow': 'ellipsis', 'height': '100%'});
