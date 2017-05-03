@@ -483,17 +483,21 @@ def list_places():
     if not r:
         return jsonify([e.to_json() for e in storage.all("Place").values()])
 
-    all_cities_id = r.get("cities", [])
-    states = r.get("states")
+    all_cities_id = r.get("cities", None)
+    states = r.get("states", None)
     if states:
         all_states = [storage.get("State", s) for s in states]
         all_states = [a for a in all_states if a is not None]
-        all_cities_id += [c.id for s in all_states for c in s.cities]
-    all_cities_id = list(set(all_cities_id))
+        if all_cities_id:
+            all_cities_id += [c.id for s in all_states for c in s.cities]
+        else:
+            all_cities_id = [c.id for s in all_states for c in s.cities]
+    if all_cities_id:
+        all_cities_id = list(set(all_cities_id))
 
-    all_amenities = r.get("amenities")
+    all_amenities = r.get("amenities", None)
     all_places = []
-    if all_cities_id or all_amenities:
+    if (all_cities_id is not None) or (all_amenities is not None):
         all_places2 = storage.all("Place").values()
         if all_cities_id:
             all_places2 = [p for p in all_places2 if
